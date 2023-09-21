@@ -11,7 +11,7 @@ A continuacion, dejo respectivas instrucciones para correr el proyecto adecuadam
 Para descargar la aplicacion, ya estando aqui, se necesita un equipo de computo con las siguientes caracteristicas:
 
 ```
-- Java 8+ instalado
+- Java 20 instalado (si cuenta con otra version, probablemente deba hacer la respectiva modificacion en el archivo "pom.xml".
 
 - Maven instalado
 
