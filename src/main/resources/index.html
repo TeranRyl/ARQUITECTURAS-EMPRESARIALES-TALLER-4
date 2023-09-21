@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=\"UTF-8\">
+  <title>Index</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .label-color {
+        color: red;
+        }
+  </style>
+</head>
+<body>
+<h1>
+</h1>
+<form action="/page">
+  <label class="label-color" for="name">Dirijase a "terminos.html":</label><br>
+  <input type="text" id="name" name="name" value="terminos.html"><br><br>
+  <input type="button" value="Enviar" onclick="loadGetMsg()">
+</form>
+<div id="getrespmsg"></div>
+<script>
+function loadGetMsg() {
+let nameVar = document.getElementById("name").value;
+const xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+document.getElementById("getrespmsg").innerHTML =
+this.responseText;
+}
+xhttp.open("GET", "terminos.html");
+xhttp.send();
+}
+</script>
+<script src="app.js"></script>
+</body>
+</html>
