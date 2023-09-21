@@ -1,4 +1,4 @@
-# MICROFRAMEWORKS WEB
+# ARQUITECTURAS DE SERVIDORES DE APLICACIONES, META PROTOCOLOS DE OBJETOS, PATRÓN IOC, REFLEXIÓN
 
 Un servidor web que permite construir aplicaciones web de manera simple usando funciones lambda.
 
@@ -112,7 +112,7 @@ Por protocolo, en el parametro se manda todo el Query, de tal manera que el prog
 ## Construido con
 
 * [Java](https://www.oracle.com/co/java/) - Backend
-* [Maven](https://maven.apache.org/) - Gestion de ciclo de vida y dependencias
+* [Maven](https://maven.apache.org/) - Gestion de ciclo de vida, codigo fuente y dependencias
 * [Git/Github](https://git-scm.com/) - Almacenar el codigo fuente
 * [IntelliJ IDEA](https://www.jetbrains.com/idea/) - IDE para desarrollo
 
