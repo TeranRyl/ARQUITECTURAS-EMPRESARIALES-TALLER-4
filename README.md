@@ -1,6 +1,6 @@
 # ARQUITECTURAS DE SERVIDORES DE APLICACIONES, META PROTOCOLOS DE OBJETOS, PATRÓN IOC, REFLEXIÓN
 
-Un servidor web que permite construir aplicaciones web de manera simple usando funciones lambda.
+Un servidor web que provee un framework IoC el cual permite la construccion de aplicaciones web a partir de un POJO (bean) utilizando reflexion de Java. Se construye un ejemplo de una app que es capaz de entregar paginas HTML e imagenes PNG. El servidor atiende multiples solicitudes no concurrentes.
 
 ## Instrucciones para ejecutar
 
@@ -11,7 +11,7 @@ A continuacion, dejo respectivas instrucciones para correr el proyecto adecuadam
 Para descargar la aplicacion, ya estando aqui, se necesita un equipo de computo con las siguientes caracteristicas:
 
 ```
-- Java instalado
+- Java 8+ instalado
 
 - Maven instalado
 
@@ -35,28 +35,28 @@ Paso a paso
 
 3. Abrir el Shell de su preferencia.
 
-4. Desde el Shell, muevase a la ubicacion donde extrajo el archivo .ZIP (Deberia estar dentro de la carpeta llamada  "ARQUITECTURAS-EMPRESARIALES-TALLER-3-master").
+4. Desde el Shell, muevase a la ubicacion donde extrajo el archivo .ZIP (Deberia estar dentro de la carpeta llamada  "ARQUITECTURAS-EMPRESARIALES-TALLER-4-master").
 
 5. Desde el Shell, escriba "mvn package" (este comando compila, construye y empaqueta el proyecto en un .JAR).
 
-6. Desde el Shell, escriba "java -cp target/Taller3-1.0-SNAPSHOT.jar edu.escuelaing.app.MySparkApp" para ejecutar la aplicacion.
+6. Desde el Shell, escriba "java -cp target/Taller4-1.0-SNAPSHOT.jar edu.escuelaing.app.MySparkApp" para ejecutar la aplicacion.
    Deberia ver un mensaje diciendo "Listo para recibir... ".
 
 7. Abra su explorador web de preferencia y busque en una pestaña incognita lo siguiente:
    
-   - "localhost:35001/getFile?name=terminos.html" (SIN LAS COMILLAS) - Pagina html con ruta "src/main/resources/terminos.html".
-   - "localhost:35001/getFile?name=style.css" (SIN LAS COMILLAS) - Archivo css con ruta "src/main/resources/style.css".
-   - "localhost:35001/getFile?name=app.js" (SIN LAS COMILLAS) - Archivo javascript con ruta "src/main/resources/app.js".
+   - "localhost:35001/terminos.html" (SIN LAS COMILLAS) - Pagina html con ruta "src/main/resources/terminos.html".
+   - "localhost:35001/style.css" (SIN LAS COMILLAS) - Archivo css con ruta "src/main/resources/style.css".
+   - "localhost:35001/app.js" (SIN LAS COMILLAS) - Archivo javascript con ruta "src/main/resources/app.js".
    - "localhost:35001/web/index.html" (SIN LAS COMILLAS) - Aplicacion con varios tipos de archivos 
       incluidos.
-   - "localhost:35001/getFile?name=risas.jpg" (SIN LAS COMILLAS) - Imagen jpg con ruta "src/main/resources/risas.jpg".
+   - "localhost:35001/risas.png" (SIN LAS COMILLAS) - Imagen jpg con ruta "src/main/resources/risas.png".
 
    - "localhost:35001/hello?name=Juan" (SIN LAS COMILLAS) - Servicio web que retorna "Hello" + *el       parametro que se pase tras el parametro "name".
 
 NOTA: Para abortar el shell con el servidor encendido, podemos presionar "CTRL" + "C".
 ```
 
-Una vez haya terminado, puede cerrar el servidor introduciendo, desde el cliente, la URL "localhost:35001/web/salir.exe" (SIN LAS COMILLAS) y el servidor se apagara enseguida.
+Una vez haya terminado, puede cerrar el servidor introduciendo, desde el cliente, la URL "localhost:35001/salir.exe" (SIN LAS COMILLAS) y el servidor se apagara enseguida.
 
 
 
