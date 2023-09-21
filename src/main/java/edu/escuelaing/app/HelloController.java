@@ -10,6 +10,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+/**
+ * Publica el servicio en la URI indicada.
+ * El servidor es capaz de entregar paginas HTML, imagenes PNG y archivos CSS y JS.
+ */
 @Component
 public class HelloController {
 
@@ -66,18 +70,20 @@ public class HelloController {
 
     }
 
-    @GetMapping("/risas.jpg")
+    @GetMapping("/risas.png")
     public static String getRisas() throws IOException{
         String response;
-        Path rutaJpg = Paths.get("src/main/resources/risas.jpg");
-        response = "HTTP/1.1 200 OK\r\n"
-                + "Content-Type: image/jpeg\r\n"
-                + "\r\n";
-        BufferedImage bufferedImage = ImageIO.read(new File("src/main/resources/risas.jpg"));
+        //Path rutaPng = Paths.get("src/main/resources/risas.png");
+        response = """
+                HTTP/1.1 200 OK\r
+                Content-Type: image/png\r
+                \r
+                """;
+        BufferedImage bufferedImage = ImageIO.read(new File("src/main/resources/risas.png"));
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         HttpServer server = HttpServer.getInstance();
         DataOutputStream dataOutputStream = new DataOutputStream(server.getOutputStream());
-        ImageIO.write(bufferedImage, "jpg", byteArrayOutputStream);
+        ImageIO.write(bufferedImage, "png", byteArrayOutputStream);
         dataOutputStream.writeBytes(response);
         dataOutputStream.write(byteArrayOutputStream.toByteArray());
         return response;
