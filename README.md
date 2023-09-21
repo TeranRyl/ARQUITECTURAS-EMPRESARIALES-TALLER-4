@@ -47,11 +47,9 @@ Paso a paso
    - "localhost:35001/terminos.html" (SIN LAS COMILLAS) - Pagina html con ruta "src/main/resources/terminos.html".
    - "localhost:35001/style.css" (SIN LAS COMILLAS) - Archivo css con ruta "src/main/resources/style.css".
    - "localhost:35001/app.js" (SIN LAS COMILLAS) - Archivo javascript con ruta "src/main/resources/app.js".
+   - "localhost:35001/risas.png" (SIN LAS COMILLAS) - Imagen jpg con ruta "src/main/resources/risas.png".
    - "localhost:35001/web/index.html" (SIN LAS COMILLAS) - Aplicacion con varios tipos de archivos 
       incluidos.
-   - "localhost:35001/risas.png" (SIN LAS COMILLAS) - Imagen jpg con ruta "src/main/resources/risas.png".
-
-   - "localhost:35001/hello?name=Juan" (SIN LAS COMILLAS) - Servicio web que retorna "Hello" + *el       parametro que se pase tras el parametro "name".
 
 NOTA: Para abortar el shell con el servidor encendido, podemos presionar "CTRL" + "C".
 ```
@@ -62,23 +60,31 @@ Una vez haya terminado, puede cerrar el servidor introduciendo, desde el cliente
 
 ## Evaluacion
 
-Ejemplo de desarrollo de aplicaciones en el servidor:
+Ejemplo de app web:
 
-Inicialmente, el programador desea leer el contenido de su archivo "terminos.html", entonces lo sube a la carpeta "src/main/resources/".
+Archivo HTML:
 
-![image](https://github.com/TeranRyl/ARQUITECTURAS-EMPRESARIALES-TALLER-3/assets/81679109/7edb899c-07a5-4bc8-805b-92152a15621e)
+![image](https://github.com/TeranRyl/ARQUITECTURAS-EMPRESARIALES-TALLER-4/assets/81679109/26d18117-6a9d-4b35-b3f8-296f4c70e8f5)
 
-Posteriormente, agrega el codigo necesario para entregar archivo HTML.
 
-![image](https://github.com/TeranRyl/ARQUITECTURAS-EMPRESARIALES-TALLER-3/assets/81679109/b729f503-c25d-4989-ae04-e2fc3f89d0b5)
+Archivo CSS:
 
-Finalmente, se agrega la instruccion para obtener el archivo en el metodo "main" del proyecto, de la siguiente manera para activar el servicio:
+![image](https://github.com/TeranRyl/ARQUITECTURAS-EMPRESARIALES-TALLER-4/assets/81679109/1f416977-6a2a-4e81-958f-ac7978a71136)
 
-![image](https://github.com/TeranRyl/ARQUITECTURAS-EMPRESARIALES-TALLER-3/assets/81679109/4720a670-bca7-4d22-a21d-fcf876f2ff0b)
 
-Este seria el resultado, buscando por la siguiente URI que abre el puerto 35001 y devuelve el archivo "terminos.html": http://localhost:35001/getFile?name=terminos.html desde Windows.
+Archivo JS:
 
-![image](https://github.com/TeranRyl/ARQUITECTURAS-EMPRESARIALES-TALLER-3/assets/81679109/e35b614d-8bad-4a96-a5ea-bf0eae784873)
+![image](https://github.com/TeranRyl/ARQUITECTURAS-EMPRESARIALES-TALLER-4/assets/81679109/7c0fdbd3-ac39-4a77-abad-bbce4562cf72)
+
+
+Imagen PNG:
+
+![image](https://github.com/TeranRyl/ARQUITECTURAS-EMPRESARIALES-TALLER-4/assets/81679109/b38e86a6-a725-4d9d-881a-78b6df1342d5)
+
+
+Pagina con varios tipos de archivos incluidos:
+![image](https://github.com/TeranRyl/ARQUITECTURAS-EMPRESARIALES-TALLER-4/assets/81679109/516ab361-97e6-48ae-8226-ee04b495c880)
+
 
 
 
