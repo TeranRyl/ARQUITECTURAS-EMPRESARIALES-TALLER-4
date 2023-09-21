@@ -3,7 +3,7 @@ package edu.escuelaing.app;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 
-public class MySparkApp {
+public class MyApp {
 
     /**
      * Este es el método principal, el cual inicia el servidor HTTP.
