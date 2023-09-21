@@ -133,5 +133,5 @@ Este proyecto tiene la licencia GNU General Public License v3.0; consulte el arc
 ## Reconocimientos
 
 * PurpleBooth - Plantilla para hacer un buen README
-* Luis Daniel Benavides - Preparacion para el taller e introduccion al diseño de sistemas de informacion
+* Luis Daniel Benavides - Preparacion para el taller e introduccion al tema
 
