@@ -39,7 +39,7 @@ Paso a paso
 
 5. Desde el Shell, escriba "mvn package" (este comando compila, construye y empaqueta el proyecto en un .JAR).
 
-6. Desde el Shell, escriba "java -cp target/Taller4-1.0-SNAPSHOT.jar edu.escuelaing.app.MySparkApp" para ejecutar la aplicacion.
+6. Desde el Shell, escriba "java -cp target/Taller4-1.0-SNAPSHOT.jar edu.escuelaing.app.MyApp" para ejecutar la aplicacion.
    Deberia ver un mensaje diciendo "Listo para recibir... ".
 
 7. Abra su explorador web de preferencia y busque en una pestaña incognita lo siguiente:
@@ -83,6 +83,7 @@ Imagen PNG:
 
 
 Pagina con varios tipos de archivos incluidos:
+
 ![image](https://github.com/TeranRyl/ARQUITECTURAS-EMPRESARIALES-TALLER-4/assets/81679109/516ab361-97e6-48ae-8226-ee04b495c880)
 
 
@@ -109,10 +110,9 @@ NOTA 2
 
 El explorador pide y ejecuta lo que el servidor web le envie, y luego el servidor devuelve el resultado (paginas html, archivos css y js e imagenes jpg).
 Para esta conversion, se tiene en cuenta el encabezado del archivo y se devuelve en bytes. Este proceso varia segun el tipo de contenido.
-Main permite crear una aplicacion de backend, la cual estara en el servidor web, y funciona como servidor de aplicaciones (el cual permite alojar distintas aplicaciones web en el), en este caso las aplicaciones de prueba se encuentran en la carpeta "resources".
+App permite crear una aplicacion de backend, la cual estara en el servidor web, y funciona como un framework IoC para la construccion aplicaciones, derivando en una webapp a partir de un POJO cargado. Para esto se explora el directorio raiz para buscar aquellas clases marcadas con la anotacion @component (la cual indica que son componentes-beans) y cargarlas, de tal manera que cuando se invoca el framework este sepa el path de las clases que necesita. En el POJO se especifica cual servicio retornar segun la URI que se indique, atendiendo con la anotacion @GetMapping.
 Se hace uso del patron de diseño SINGLETON, para instanciar por unica vez "HttpServer".
-Se registran servicios web usando funciones lambda, utilizando formularios para invocarlos.
-Por protocolo, en el parametro se manda todo el Query, de tal manera que el programador se encarga de sacar los valores "hello?name=". Los parametros del query se pueden leer desde el programa.
+
 
 
 ## Construido con
