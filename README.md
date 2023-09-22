@@ -87,6 +87,11 @@ Pagina con varios tipos de archivos incluidos:
 ![image](https://github.com/TeranRyl/ARQUITECTURAS-EMPRESARIALES-TALLER-4/assets/81679109/516ab361-97e6-48ae-8226-ee04b495c880)
 
 
+Pagina por defecto. en caso de URI desconocida:
+
+![image](https://github.com/TeranRyl/ARQUITECTURAS-EMPRESARIALES-TALLER-4/assets/81679109/fac3e4ca-c739-4eda-9adb-efb5bc58d042)
+
+
 
 
 
